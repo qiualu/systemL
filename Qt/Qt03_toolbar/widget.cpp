@@ -52,7 +52,7 @@ Widget::~Widget()
 
 void Widget::doProcess(){
     QAction *action = (QAction *)this->sender();
-    qDebug() <<" doProcess " endl ;
+    qDebug() <<" doProcess " << endl ;
     qDebug() << action->text()<<endl;
 }
 
