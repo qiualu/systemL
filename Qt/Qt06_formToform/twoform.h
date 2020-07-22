@@ -1,4 +1,4 @@
-#ifndef TWOFORM_H
+﻿#ifndef TWOFORM_H
 #define TWOFORM_H
 
 #include <QWidget>
@@ -14,6 +14,11 @@ class twoForm : public QWidget
 public:
     explicit twoForm(QWidget *parent = nullptr);
     ~twoForm();
+
+private slots:
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::twoForm *ui;

@@ -1,2 +1,8 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/img">
+        <file>img/gx (1).gif</file>
+        <file>img/gx (2).gif</file>
+        <file>img/gx (3).gif</file>
+        <file>img/gx (4).gif</file>
+    </qresource>
+</RCC>

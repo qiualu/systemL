@@ -17,15 +17,24 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    oneform.cpp
+    oneform.cpp \
+    threeform.cpp \
+    twoform.cpp
 
 HEADERS += \
-    oneform.h
+    oneform.h \
+    threeform.h \
+    twoform.h
 
 FORMS += \
-    oneform.ui
+    oneform.ui \
+    threeform.ui \
+    twoform.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    img.qrc

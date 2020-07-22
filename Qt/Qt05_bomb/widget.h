@@ -1,8 +1,9 @@
-#ifndef WIDGET_H
+﻿#ifndef WIDGET_H
 #define WIDGET_H
 
 #include <QWidget>
-
+#include<QDebug>
+#include <QMovie>
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
 QT_END_NAMESPACE
@@ -14,8 +15,16 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
+private slots:
+    void doProcessTimeOut();
+
 
 private:
     Ui::Widget *ui;
+    void Init();
+    QTimer *myTimer;
+    int index;
+    QMovie *movie = new QMovie(this);
+
 };
 #endif // WIDGET_H

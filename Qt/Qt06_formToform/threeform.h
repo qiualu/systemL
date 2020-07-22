@@ -1,4 +1,4 @@
-#ifndef THREEFORM_H
+﻿#ifndef THREEFORM_H
 #define THREEFORM_H
 
 #include <QWidget>
@@ -14,6 +14,11 @@ class threeForm : public QWidget
 public:
     explicit threeForm(QWidget *parent = nullptr);
     ~threeForm();
+
+private slots:
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::threeForm *ui;

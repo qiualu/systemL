@@ -16,13 +16,25 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    comonform.cpp \
+    comthreefrom.cpp \
+    comtwoform.cpp \
     main.cpp \
+    threeform.cpp \
+    twoform.cpp \
     widget.cpp
 
 HEADERS += \
+    comonform.h \
+    comthreefrom.h \
+    comtwoform.h \
+    threeform.h \
+    twoform.h \
     widget.h
 
 FORMS += \
+    threeform.ui \
+    twoform.ui \
     widget.ui
 
 # Default rules for deployment.
