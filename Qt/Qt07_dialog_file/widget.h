@@ -1,5 +1,7 @@
 ﻿#ifndef WIDGET_H
 #define WIDGET_H
+
+
 // MSVC中文乱码
 #if _MSC_VER >= 1600
 #pragma execution_character_set("utf-8")
@@ -21,8 +23,6 @@ public:
 
 private slots:
     void on_pushButton_clicked();
-
-    void on_pushButton_2_clicked();
 
 private:
     Ui::Widget *ui;
