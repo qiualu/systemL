@@ -141,5 +141,33 @@ void Widget::on_pushButton_clicked()
 // 保存文件
 void Widget::on_save_file_clicked()
 {
+    qDebug("保存文件");
 
+    QString filename = QFileDialog::getSaveFileName(this,"save file","/home","Text(*.cpp *.h)");
+    if (filename.isEmpty()){
+        QMessageBox::warning(this,"warning","File can't select ");
+        return;
+    }
+    myFile->setFileName(filename);
+    bool ret = myFile->open(QIODevice::WriteOnly|QIODevice::Text);
+    if(!ret){
+        QMessageBox::warning(this,"warning","open failed");
+        return;
+    }
+    // QFile 直接读取
+//    QString str = ui->textEdit->toPlainText();
+//    myFile->write(str.toLocal8Bit());
+//    myFile->close();
+
+    // 文件流形式(支持大文本文件)
+    QTextStream stream(myFile);
+    QString str = ui->textEdit->toPlainText();
+    stream << str;
+    stream.flush();
+    myFile->close();
 }
+
+
+
+
+

@@ -9,3 +9,4 @@
 * Qt05_bomb -> 倒计时全屏|背景透明|全屏
 * Qt06_formToform 静态公共方法实现 04 ^
 
+* Qt07_dialog_file 文件打开 加载过渡条,选择颜色
